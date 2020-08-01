@@ -6,8 +6,8 @@ This code is used to
 * Extract image specified in [FDDB_Fold](http://vis-www.cs.umass.edu/fddb/) from [face_in_the_wild](http://tamaraberg.com/faceDataset/index.html) and dump them seperately
 
 ### Example
-__Input format__
-FDDB-fold-01.txt
+__Input Format__
+FDDB-folds/FDDB-fold-01.txt
 ```
 2002/08/11/big/img_591
 2002/08/26/big/img_265
@@ -16,7 +16,7 @@ FDDB-fold-01.txt
 .
 .
 ```
-FDDB-fold-01-ellipseList.txt
+FDDB-folds/FDDB-fold-01-ellipseList.txt
 ```
 2002/08/11/big/img_591
 1
@@ -32,6 +32,22 @@ FDDB-fold-01-ellipseList.txt
 .
 .
 .
+```
+__Output Format__
+__[lable] [Top left x1] [Top left y1] [Bottom right x2] [Bottom right y2]__ 
+FDDB_DATASET_IMAGES_GROUND_TRUTH/ground_truth_rect/0.txt
+```
+face 180.05081678 41.1339610644 359.33598322 282.428438936
+```
+FDDB_DATASET_IMAGES_GROUND_TRUTH/ground_truth_rect/1.txt
+```
+face 60.48416082 20.013956302 150.01577918 154.404115698
+face 156.822265373 87.528163558 211.319564627 171.163038442
+face 296.115684906 47.3950108142 385.672915094 187.602891186
+```
+FDDB_DATASET_IMAGES_GROUND_TRUTH/ground_truth_rect/2.txt
+```
+face 195.990206258 46.6961593003 314.775991742 220.8395547
 ```
 __Output Folder__
 * FDDB Images   : FDDB_DATASET_IMAGES_GROUND_TRUTH/fddb_images/
